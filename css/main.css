@@ -4,13 +4,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    background-color: #ffffff;
 }
 
 ul, li, a ,button{
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
-    font-size:16px;
+    font-size:18px;
     color: #edf0f1;
     text-decoration: none;
 }
@@ -44,7 +44,7 @@ header{
 }
 
 .nav-links li a:hover{
-    color: #0088A9;
+    color: white;
 }
 .cta{
     background: rgba(223,1,8,255);
