@@ -5,22 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <title>Optica Gaido</title>
   </head>
+  <header>
+    <img class="logo" src="assets/Logo.png" alt="logo" />
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Lojas</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Armaçoes</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="https://api.whatsapp.com/send?phone=5511970287056">
+      <button>Contato</button>
+    </a>
+  </header>
   <body>
-    <header>
-      <img class="logo" src="assets/Logo.png" alt="logo" />
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Lojas</a></li>
-          <li><a href="https://api.whatsapp.com/send?phone=5511970287056">Contato</a></li>
-          <li><a href="#">Armaçoes</a></li>
-        </ul>
-      </nav>
-      <a class="cta" href="#">
-        <button>Contato</button>
-      </a>
-    </header>
+    <section class="carousel">
+    <input  type="radio" name="position" checked />
+    <input  type="radio" name="position" />
+    <input  type="radio" name="position" />
+    <input  type="radio" name="position" />
+    <input  type="radio" name="position" />
+      <main id="carousel">
+        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img1.jpg" alt=""></div>
+        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img2.jpeg" alt=""></div>
+        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img3.jpeg" alt=""></div>
+        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img4.jpeg" alt=""></div>
+        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img1.jpg" alt=""></div>
+      <main>
+    </section>
   </body>
 </html>
