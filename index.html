@@ -1,41 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/carousel.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
     <title>Optica Gaido</title>
-  </head>
-  <header>
+</head>
+<header>
     <img class="logo" src="assets/Logo.png" alt="logo" />
     <nav>
-      <ul class="nav-links">
-        <li><a href="#">Lojas</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Armaçoes</a></li>
-      </ul>
+        <ul class="navBar-links">
+            <li><a href="#">Lojas</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Armaçoes</a></li>
+        </ul>
     </nav>
     <a class="cta" href="https://api.whatsapp.com/send?phone=5511970287056">
-      <button>Contato</button>
+        <button class="contactBtn">Contato</button>
     </a>
-  </header>
-  <body>
-    <section class="carousel">
-    <input  type="radio" name="position" checked />
-    <input  type="radio" name="position" />
-    <input  type="radio" name="position" />
-    <input  type="radio" name="position" />
-    <input  type="radio" name="position" />
-      <main id="carousel">
-        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img1.jpg" alt=""></div>
-        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img2.jpeg" alt=""></div>
-        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img3.jpeg" alt=""></div>
-        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img4.jpeg" alt=""></div>
-        <div class="item"><img class="imgcarousel" src="assets/img-carrousel/img1.jpg" alt=""></div>
-      <main>
-    </section>
-  </body>
+</header>
+
+<body>
+    <section class="portfolio" id="portfolio">
+		<div class="container section-wrapper">
+			<div class="underline purple"></div>
+			<div class="row">
+				<div class="col-sm-4 col-xs-6">
+                    <button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem1">
+                        <div class="portfolio-item">
+						    <div class="portfolio-img">
+							    <img src="assets/img-carrousel/img1.jpg" alt="port-1" class="port-item">
+							        <div class="portfolio-img-hover">
+								        <a href="#">
+                                            <img src="assets/plus.png" class="plus">
+                                        </a>
+							        </div> <!-- /.portfolio-img-hover -->
+						    </div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Olivera Note <br><small>Fashion</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i>
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+                    </button>
+				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-6">
+					<button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem2">
+                        <div class="portfolio-item">
+						    <div class="portfolio-img">
+							    <img src="assets/img-carrousel/img2.jpeg" alt="port-1" class="port-item">
+							        <div class="portfolio-img-hover">
+								        <a href="#">
+                                            <img src="assets/plus.png" class="plus">
+                                        </a>
+							        </div> <!-- /.portfolio-img-hover -->
+						    </div> <!-- /.portfolio-img -->
+						<div class="portfolio-item-details">
+							<div class="portfolio-item-name">
+								Olivera Note <br><small>Fashion</small>
+							</div> <!-- /.portfolio-item-name -->
+							<div class="port-heart">
+								<i class="ion-ios-heart-outline"></i>
+							</div> <!-- /.port-heart -->
+						</div> <!-- /.portfolio-item-details -->
+					</div> <!-- /.portfolio-item -->
+                    </button>
+				</div> <!-- /.col-md-4 -->
+				<div class="col-sm-4 col-xs-6">
+					<div class="portfolio-item">
+						<button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem3">
+							<div class="portfolio-item">
+								<div class="portfolio-img">
+									<img src="assets/img-carrousel/img3.jpeg" alt="port-1" class="port-item">
+										<div class="portfolio-img-hover">
+											<a href="#">
+												<img src="assets/plus.png" class="plus">
+											</a>
+										</div> <!-- /.portfolio-img-hover -->
+								</div> <!-- /.portfolio-img -->
+							<div class="portfolio-item-details">
+								<div class="portfolio-item-name">
+									Olivera Note <br><small>Fashion</small>
+								</div> <!-- /.portfolio-item-name -->
+								<div class="port-heart">
+									<i class="ion-ios-heart-outline"></i>
+								</div> <!-- /.port-heart -->
+							</div> <!-- /.portfolio-item-details -->
+						</div> <!-- /.portfolio-item -->
+						</button>
+				</div> <!-- /.col-md-4 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.portfolio -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="imagem1" tabindex="-1" aria-labelledby="imagem1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <img src="assets/img-carrousel/img1.jpg" alt="port-5" >
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="imagem2" tabindex="-1" aria-labelledby="imagem2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <img src="assets/img-carrousel/img2.jpeg" alt="port-5" >
+      </div>
+    </div>
+  </div>
+   <!-- Modal -->
+  <div class="modal fade" id="imagem3" tabindex="-1" aria-labelledby="imagem3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <img src="assets/img-carrousel/img3.jpeg" alt="port-5" >
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
