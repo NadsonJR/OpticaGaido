@@ -11,7 +11,7 @@
     <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
     <title>Optica Gaido</title>
 </head>
-  <!-- Navbar-->
+<!-- Navbar-->
 <header>
 	<div class=" container NavigationBar d-none d-md-block d-lg-block">
 			<div class="row align-items-center">
@@ -22,7 +22,11 @@
 				</div>
 				<div class="offset-md-1 col-md-1 col-sm-2">
 					<ul class="nav nav-pills">
-						<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Lojas</a></li>
+						<li class="nav-item">
+							<button type="button" class="btn-modal-Lojas" data-bs-toggle="modal" data-bs-target="#modalLojas">
+								<a href="#" class="btn-modal-Lojas" >Lojas</a>
+							</button>
+						</li>
 					  </ul>
 				</div>
 			</div>
@@ -36,15 +40,16 @@
 				</div>
 				<div class="offset-1 col-1">
 					<ul class="nav nav-pills">
-						<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Lojas</a></li>
+						<button type="button" class="btn-modal-Lojas" data-bs-toggle="modal" data-bs-target="#modalLojas">
+							<a href="#" class="btn-modal-Lojas" >Lojas</a>
+						</button>
 					  </ul>
 				</div>
 			</div>
 		</div>
 </header>
-  <!-- Navbar-->
+<!-- Navbar-->
 <body>
-
 		<div class="container containerProduct">
 			<div class="row">
 				<div class="col-sm-12 col-md-4 col-xs-6">
@@ -139,6 +144,53 @@
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <img src="assets/img-carrousel/img3.jpeg" alt="port-5" >
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modalLojas" tabindex="-1" aria-labelledby="modalLojas" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+		  <div class="modal-body">
+			  <div class="row d-flex justify-content-center align-content-center">
+				  <div class="col-md-6 col-sm-12">
+					  <!-- Card Itapecerica -->
+						<div class="card">
+							<img src="assets/imgLojas/Itap1.png" class="card-img-top" alt="ImgItap">
+								<div class="card-body">
+				  				 <h5 class="card-title">Itapecerica da Serra</h5>
+				  				 <p class="card-text">Av. Quinze de Novembro, 86 - Centro, Itapecerica da Serra - SP, 06850-100</p>
+				  				 <a href="https://g.page/opticasbrasilgaidoitapecerica?share" class="btn btn-primary">Verifique a rota</a>
+								</div>
+			  			</div>
+			  	<!-- Card Itapecerica -->
+				  </div>
+				  <div class="col-md-6 col-sm-12">
+					  <!-- Card Jardim Angela -->
+					<div class="card">
+						<img src="assets/imgLojas/Angela1.png" class="card-img-top" alt="ImgAngela">
+						<div class="card-body">
+						  <h5 class="card-title">Jardim Angela</h5>
+						  <p class="card-text">Estrada do M'Boi Mirim, 4468 - Jardim Angela, São Paulo - SP, 04935-056</p>
+						  <a href="https://goo.gl/maps/Yikz6RL7E7A7XnF46" class="btn btn-primary">Verifique a rota</a>
+						</div>
+					  </div>
+					  <!-- Card Jardim Angela -->
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<!-- Card Piraporinha -->
+					  <div class="card">
+						  <img src="assets/imgLojas/Piraporinha1.png" class="card-img-top" alt="ImgAngela">
+						  <div class="card-body">
+							<h5 class="card-title">Piraporinha</h5>
+							<p class="card-text">R. Estevão Fernandes, 183 - Jardim Santa Edwirges, São Paulo - SP, 04935-056</p>
+							<a href="https://goo.gl/maps/hhxaPALEekVX5yXk6" class="btn btn-primary">Verifique a rota</a>
+						  </div>
+						</div>
+						<!-- Card Piraporinha -->
+					  </div>
+			  </div>
+		  </div>
       </div>
     </div>
   </div>

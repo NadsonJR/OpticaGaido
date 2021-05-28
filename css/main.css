@@ -16,9 +16,13 @@ header{
 	margin-left: 0;
 	margin-right: 0;
 }
-.nav-link {
+.btn-modal-Lojas {
     color:red !important;
 	background-color: white!important;
+	border-radius: 5px;
+	border: 0;
+	padding:8px;
+	text-decoration: none;
 }
 .isso{
 	background: rgba(223, 1, 8, 255) !important;
@@ -51,9 +55,7 @@ header{
 	transition: all .6s ease-in-out;
 	background: rgba(0, 0, 0, 0.5);
 }
-.portfolio-img-hover{
 
-}
 .plus{
 	display: none;
 }
@@ -92,4 +94,11 @@ header{
     .modal-xl {
         max-width: 1600px ;
     }
+}
+
+/*=================================================
+||				3. Card
+==================================================*/
+.card{
+	margin: 5px;
 }
