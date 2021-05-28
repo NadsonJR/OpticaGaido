@@ -6,32 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css" />
     <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
     <title>Optica Gaido</title>
 </head>
 <header>
-    <img class="logo" src="assets/Logo.png" alt="logo" />
-    <nav>
-        <ul class="navBar-links">
-            <li><a href="#">Lojas</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Armaçoes</a></li>
-        </ul>
-    </nav>
-    <a class="cta" href="https://api.whatsapp.com/send?phone=5511970287056">
-        <button class="contactBtn">Contato</button>
-    </a>
+	<div class=" container NavigationBar">
+			<div class="row align-items-center">
+				<div class=" col-md-10 mb-2 col-sm-10">
+					<a href="#">
+						<img class="imgHeader"src="assets/LogoHeader.png" alt="Logo">
+					</a>
+				</div>
+				<div class="offset-md-1 col-md-1 col-sm-2">
+					<ul class="nav nav-pills">
+						<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Lojas</a></li>
+					  </ul>
+				</div>
+			</div>
+		</div>
 </header>
+<!-- Navbar-->
 
+		
+  <!-- Navbar-->
 <body>
-    <section class="portfolio" id="portfolio">
-		<div class="container section-wrapper">
-			<div class="underline purple"></div>
+
+		<div class="container containerProduct">
 			<div class="row">
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-12 col-md-4 col-xs-6">
                     <button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem1">
                         <div class="portfolio-item">
 						    <div class="portfolio-img">
@@ -53,7 +57,7 @@
 					</div> <!-- /.portfolio-item -->
                     </button>
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-12 col-md-4 col-xs-6">
 					<button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem2">
                         <div class="portfolio-item">
 						    <div class="portfolio-img">
@@ -75,7 +79,7 @@
 					</div> <!-- /.portfolio-item -->
                     </button>
 				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-4 col-xs-6">
+				<div class="col-sm-12 col-md-4 col-xs-6">
 					<div class="portfolio-item">
 						<button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem3">
 							<div class="portfolio-item">
@@ -100,7 +104,6 @@
 				</div> <!-- /.col-md-4 -->
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
-	</section> <!-- /.portfolio -->
 
   
   <!-- Modal -->

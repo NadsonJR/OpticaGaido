@@ -1,79 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
-}
-
-ul, li, a, button {
+*{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 18px;
-    color: #edf0f1;
-    text-decoration: none;
+    font-size: 16px;
 }
+/*=================================================
+||				1. Navbar
+==================================================*/
+header{
+	background: rgba(223, 1, 8, 255) !important;
 
-header {
-    background: rgba(223, 1, 8, 255);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
 }
-
-.logo {
-    opacity: 1;
-    width: 10%;
-    cursor: pointer;
-    margin-right: auto;
+.NavigationBar{
+    background: rgba(223, 1, 8, 255) !important;
+	margin-left: 0;
+	margin-right: 0;
 }
-
-.navBar-links {
-    background: rgba(223, 1, 8, 255);
-    list-style: none;
+.nav-link {
+    color:red !important;
+	background-color: white!important;
 }
-
-.navBar-links li {
-    background: rgba(223, 1, 8, 255);
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.navBar-links li a {
-    color: white;
-    text-decoration: none;
-    justify-content: center;
-    background: rgba(223, 1, 8, 255);
-    transition: all 0.3s ease 0;
-}
-
-.navBar-links li a:hover {
-    color: white;
-}
-
-.cta {
-    background: rgba(223, 1, 8, 255);
-}
-
-.contactBtn {
-    padding: 9px 25px;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0;
-}
-
-.contactBtn:hover {
-    background-color: white;
-    opacity: 0.8;
+.isso{
+	background: rgba(223, 1, 8, 255) !important;
 }
 
 /*=================================================
 ||				7. Portfolio
 ==================================================*/
+.containerProduct{
+    margin: 20px;
+}
 .portfolio{
     margin: 20px !important; 
 }
@@ -83,8 +39,7 @@ header {
 	text-align: center;
 }
 .portfolio-img .port-item{
-	width: 400px;
-	height: 300px;
+	width: 100%;
 	transition: all .6s ease-in-out;
 }
 .portfolio-img:hover .portfolio-img-hover{
