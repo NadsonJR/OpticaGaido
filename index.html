@@ -15,7 +15,7 @@
 <header>
 	<div class=" container NavigationBar d-none d-md-block d-lg-block">
 			<div class="row align-items-center">
-				<div class=" col-md-10 mb-2 col-sm-10">
+				<div class=" col-md-10 mb-2 col-sm-12">
 					<a href="#">
 						<img class="imgHeader"src="assets/LogoHeader.png" alt="Logo">
 					</a>
@@ -38,7 +38,7 @@
 						<img class="imgHeader"src="assets/LogoHeader.png" alt="Logo">
 					</a>
 				</div>
-				<div class="offset-1 col-1">
+				<div class=" col-2">
 					<ul class="nav nav-pills">
 						<button type="button" class="btn-modal-Lojas" data-bs-toggle="modal" data-bs-target="#modalLojas">
 							<a href="#" class="btn-modal-Lojas" >Lojas</a>
@@ -49,85 +49,67 @@
 		</div>
 </header>
 <!-- Navbar-->
-<body>
-		<div class="container containerProduct">
-			<div class="row">
-				<div class="col-sm-12 col-md-4 col-xs-6">
-                    <button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem1">
-                        <div class="portfolio-item">
-						    <div class="portfolio-img">
-							    <img src="assets/img-carrousel/img1.jpg" alt="port-1" class="port-item">
-							        <div class="portfolio-img-hover">
-								        <a href="#">
-                                            <img src="assets/plus.png" class="plus">
-                                        </a>
-							        </div> <!-- /.portfolio-img-hover -->
-						    </div> <!-- /.portfolio-img -->
-						<div class="portfolio-item-details">
-							<div class="portfolio-item-name">
-								Olivera Note <br><small>Fashion</small>
-							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i>
-							</div> <!-- /.port-heart -->
-						</div> <!-- /.portfolio-item-details -->
-					</div> <!-- /.portfolio-item -->
-                    </button>
-				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-12 col-md-4 col-xs-6">
-					<button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem2">
-                        <div class="portfolio-item">
-						    <div class="portfolio-img">
-							    <img src="assets/img-carrousel/img2.jpeg" alt="port-1" class="port-item">
-							        <div class="portfolio-img-hover">
-								        <a href="#">
-                                            <img src="assets/plus.png" class="plus">
-                                        </a>
-							        </div> <!-- /.portfolio-img-hover -->
-						    </div> <!-- /.portfolio-img -->
-						<div class="portfolio-item-details">
-							<div class="portfolio-item-name">
-								Olivera Note <br><small>Fashion</small>
-							</div> <!-- /.portfolio-item-name -->
-							<div class="port-heart">
-								<i class="ion-ios-heart-outline"></i>
-							</div> <!-- /.port-heart -->
-						</div> <!-- /.portfolio-item-details -->
-					</div> <!-- /.portfolio-item -->
-                    </button>
-				</div> <!-- /.col-md-4 -->
-				<div class="col-sm-12 col-md-4 col-xs-6">
-					<div class="portfolio-item">
-						<button type="button" class="btn-modal-port" data-bs-toggle="modal" data-bs-target="#imagem3">
-							<div class="portfolio-item">
-								<div class="portfolio-img">
-									<img src="assets/img-carrousel/img3.jpeg" alt="port-1" class="port-item">
-										<div class="portfolio-img-hover">
-											<a href="#">
-												<img src="assets/plus.png" class="plus">
-											</a>
-										</div> <!-- /.portfolio-img-hover -->
-								</div> <!-- /.portfolio-img -->
-							<div class="portfolio-item-details">
-								<div class="portfolio-item-name">
-									Olivera Note <br><small>Fashion</small>
-								</div> <!-- /.portfolio-item-name -->
-								<div class="port-heart">
-									<i class="ion-ios-heart-outline"></i>
-								</div> <!-- /.port-heart -->
-							</div> <!-- /.portfolio-item-details -->
-						</div> <!-- /.portfolio-item -->
-						</button>
-				</div> <!-- /.col-md-4 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
+<body >
+	<!-- Container Comp 1-->
+	<section class="apresentacao">
+		<div class="container">
+		<div class="row align-items-center">
+			<div class="text col-md-6 col-sm-12">
+				<h1>Óticas Brasil</h1>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+					standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+					make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+					remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+					Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions 
+					of Lorem Ipsum.</p>
+			</div>
+			<div class="image col-md-6 col-sm-12">
+				<img src="assets/Comp1/imgModel.png" alt="">
+			</div>
+		</div>
+		</div>
+		
+	</section>
+<!-- Container Comp 1-->
 
-  
+<!-- Container Comp 2-->
+	<section class="lojas">
+		<div class="container box">
+			<div class="title w-100">
+				<h1>Nossas Lojas</h1>
+			</div>
+			<div class="groupbtn">
+				<h6>Itapecerica da Serra</h6>
+			</div>
+		</div>
+	</section>
+<!-- Container Comp 2-->
+
   <!-- Modal -->
   <div class="modal fade" id="imagem1" tabindex="-1" aria-labelledby="imagem1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
-        <img src="assets/img-carrousel/img1.jpg" alt="port-5" >
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+			  <div class="carousel-item active" data-bs-interval="10000">
+				<img src="assets/Logo.png" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item" data-bs-interval="4000">
+				<img src="assets/img-carrousel/img2.jpeg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="assets/img-carrousel/img3.jpeg" class="d-block w-100" alt="...">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
       </div>
     </div>
   </div>
