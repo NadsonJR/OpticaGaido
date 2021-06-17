@@ -6,7 +6,7 @@
 	
 }
 body {
-	background-image: url('/assets/backComp/Background.png');
+	background-color: #696969;
 	width: 100%;
 }
 .w-100{
@@ -35,8 +35,11 @@ header{
 /*=================================================
 ||				2. Apresentação
 ==================================================*/
+.apresentacao{
+	margin: 20px !important;
+}
 .text{
-	color:white;
+	color:Black;
 	align-content: center;
 	font-size:
 }
@@ -54,7 +57,24 @@ header{
 	flex-flow: wrap;
 }
 .lojas{
-	color:white;
+	color:Black;
+	margin: 10px;
+}
+.icons{
+	max-width: 35px;
+	margin: 5px;
+}
+.card{
+	border-radius:10px !important;
+	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35);
+	margin: 20px !important;
+}
+.linkCard a{
+	text-decoration: none !important;
+	color:Black;
+}
+.linkCard a:hover{
+	color:rgba(223, 1, 8, 255) !important;
 }
 /*=================================================
 ||				3. Card
