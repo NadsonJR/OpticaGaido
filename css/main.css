@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;600&display=swap');
 *{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
 	
@@ -32,30 +33,45 @@ header{
 	padding:8px;
 	text-decoration: none;
 }
+.nav-link {
+	color:white !important;
+}
+
 /*=================================================
 ||				2. Apresentação
 ==================================================*/
 .apresentacao{
-	margin: 20px !important;
+	margin: 10px;
+}
+.apresentacao h1{
+	font-size:80px;
 }
 .text{
 	color:Black;
-	align-content: center;
-	font-size:
+	align-items:center;
+    justify-content:center;
 }
 .text h1 {
 	text-align:center;
 }
-.image{
-	width: 100%;
+.img-responsive{
+	max-width: 800px;
 }
-.image img{
-	width: 100%;
+
+/*=================================================
+||				3. Produtos
+==================================================*/
+.Produtos h1{
+	font-size: 60px;
 }
-.box{
-	display: flex;
-	flex-flow: wrap;
+.gallery img{
+	max-width:500px;
+	max-height:250px;
 }
+
+/*=================================================
+||				3. Contato
+==================================================*/
 .lojas{
 	color:Black;
 	margin: 10px;
@@ -88,4 +104,11 @@ header{
 ==================================================*/
 .carousel-item img{
 	height: 600px !important;
+}
+
+@media(max-width: 440px){
+	.img-responsive{
+		width: 100%;
+		height:100%;
+	}
 }
