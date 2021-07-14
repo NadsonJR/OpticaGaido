@@ -118,6 +118,10 @@ header{
 }
 
 @media(max-width: 440px){
+	.Produtos h1{
+		text-align: center;
+	}
+
 	.img-responsive{
 		width: 100%;
 		height:100%;
