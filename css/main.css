@@ -40,8 +40,12 @@ header{
 /*=================================================
 ||				2. Apresentação
 ==================================================*/
+.carousel-item .img-responsive {
+    height: 800px !important;
+	border-radius: 10px;
+}
 .apresentacao{
-	margin: 10px;
+	margin: 20px;
 }
 .apresentacao h1{
 	font-size:80px;
@@ -56,17 +60,23 @@ header{
 }
 .img-responsive{
 	max-width: 800px;
+	height: 800px !important;
 }
 
 /*=================================================
 ||				3. Produtos
 ==================================================*/
+.Produtos{
+	background-color:#f2f2f2;
+	padding:20px;
+}
 .Produtos h1{
 	font-size: 60px;
 }
 .gallery img{
-	max-width:500px;
-	max-height:250px;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
 }
 
 /*=================================================
@@ -81,7 +91,8 @@ header{
 	margin: 5px;
 }
 .card{
-	border-radius:10px !important;
+	width: 100%;
+	border-radius:10px;
 	box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.35);
 	margin: 20px !important;
 }
@@ -111,4 +122,13 @@ header{
 		width: 100%;
 		height:100%;
 	}
+	.carousel-item .img-responsive {
+		height: 600px !important;
+		border-radius: 10px;
+	}
+	.gallery img{
+		max-width:350px;
+		max-height:300px;
+	}
+	
 }
