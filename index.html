@@ -13,7 +13,7 @@
 </head>
 <!-- Navbar-->
 <header>
-	<nav class="navbar navbar-expand-lg navbar-light">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light">
 		<div class="container-fluid justify-content-between">
 		  <a class="navbar-brand" href="#">
 			  <img src="assets/icons/LogoHeader.png" alt="">
@@ -23,9 +23,9 @@
 		  </button>
 		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-			  <a class="nav-link active" aria-current="page" href="#">Home</a>
-			  <a class="nav-link" href="#">Produtos</a>
-			  <a class="nav-link" href="#">Contato</a>
+			  <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+			  <a class="nav-link" href="#Produto">Produtos</a>
+			  <a class="nav-link" href="#lojas">Contato</a>
 			</div>
 		  </div>
 		</div>
@@ -34,7 +34,7 @@
 <!-- Navbar-->
 <body >
 <!-- Container Apresentação-->
-	<section class="apresentacao comp1">
+	<section class="apresentacao comp1" id="Home">
 		<div class="container-fluid">
 			<div class="row align-items-center">
 			<div class="text offset-md-1 col-md-6 col-sm-12">
@@ -81,7 +81,7 @@
 <!-- Container Apresentação-->
 
 <!-- Container Produtos-->
-	<section class="Produtos">
+	<section class="Produtos" id="Produto">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
@@ -109,7 +109,7 @@
 
 
 <!-- Container Contato-->
-	<section class="lojas">
+	<section class="lojas" id="lojas">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="title">
