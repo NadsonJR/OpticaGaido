@@ -129,6 +129,15 @@ body {
 .carousel-item img{
 	height: 600px !important;
 }
+/*=================================================
+||				4. Exame-form
+==================================================*/
+
+.btn-exame{
+	color: rgba(223, 1, 8, 255)!important;
+    background-color: white !important;
+	border: 2px solid red !important;
+}	
 
 @media(max-width: 440px){
 	.Produtos h1{
@@ -148,4 +157,5 @@ body {
 		max-height:300px;
 	}
 	
+
 }
