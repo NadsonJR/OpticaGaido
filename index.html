@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,17 +10,6 @@
 	<link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css" />
 	<script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
 	<title>Optica Gaido</title>
-=======
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css" />
-	<link rel="icon" href="assets/icons/icontab.png">
-    <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
-    <title>Optica Gaido</title>
->>>>>>> 397a8f233dafb5eda1cf3c5a76c256b281b13359
 </head>
 <!-- Navbar-->
 <header>
@@ -275,7 +263,7 @@
 
 	<!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg">
+		<div class="modal-dialog modal-lg modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Agende seu exame</h5>
@@ -284,23 +272,23 @@
 				<div class="modal-body">
 					<form action="submit">
 						<div class="row">
-							<div class="col-6">
+							<div class="col-md-6 col-sm-12">
 								<div>Nome completo:</div>
-								<input type="text" id="name">
+								<input class="form-control" type="text" id="name">
 							</div>
-							<div class="col-6">
+							<div class="col-md-6 col-sm-12">
 								<div>E-mail:</div>
-								<input type="text" id="email" placeholder="email@email.com">
+								<input class="form-control" type="text" id="email" placeholder="email@email.com">
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-6">
+							<div class="col-md-6 col-sm-12">
 								<div>Telefone:</div>
-								<input type="text" id="name" placeholder="1190000-0000">
+								<input class="form-control" type="text" id="name" placeholder="1190000-0000">
 							</div>
-							<div class="col-6">
+							<div class="col-md-6 col-sm-12">
 								<div>Loja</div>
-								<select name="lojas" id="lojasSelect">
+								<select class="form-select" name="lojas" id="lojasSelect">
 									<option value="">--Nenhum--</option>
 									<option value="Itapecerica da serra">Itapecerica da Serra</option>
 									<option value="Taboão da Serra">Taboao da Serra</option>

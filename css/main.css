@@ -40,6 +40,9 @@ body {
 	background-color:white;
 	color: rgba(223, 1, 8, 255) !important;
 }
+.navbar-toggler{
+	background-color: white !important;
+}
 
 /*=================================================
 ||				2. Apresentação
@@ -137,7 +140,14 @@ body {
 	color: rgba(223, 1, 8, 255)!important;
     background-color: white !important;
 	border: 2px solid red !important;
-}	
+	float: right ;
+}
+.modal-body input{
+	width: 100%;
+}
+.modal-body select{
+	width: 100%;
+}		
 
 @media(max-width: 440px){
 	.Produtos h1{
@@ -155,7 +165,10 @@ body {
 	.gallery img{
 		max-width:350px;
 		max-height:300px;
+		border-radius:initial;
 	}
-	
+	.navbar-nav{
+		text-align: center;
+	}
 
 }
