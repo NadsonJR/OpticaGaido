@@ -270,24 +270,25 @@
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<form class="needs-validation" action="/cadastro" method="post">
+					<form action="/cadastro" method="post">
 						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<label for="name" class="form-label">Nome:</label>
-								<input class="form-control" type="text" id="name" name="name" required>
-								<div class="invalid-feedback">
-									Por favor Preencha o nome.
-								  </div>
+							<div class="col-md-6 col-sm-12">
+								<div>Nome completo:</div>
+								<input class="form-control" type="text" id="name" name="name">
+							</div>
+							<div class="col-md-6 col-sm-12">
+								<div>E-mail:</div>
+								<input class="form-control" type="text" id="email" placeholder="email@email.com" name="email">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-12">
 								<div>Telefone:</div>
-								<input class="form-control" type="text" id="name" placeholder="1190000-0000" name="phone" required>
+								<input class="form-control" type="text" id="name" placeholder="1190000-0000" name="phone">
 							</div>
 							<div class="col-md-6 col-sm-12">
 								<div>Loja</div>
-								<select class="form-select" name="lojas" id="lojasSelect" name="loja" required>
+								<select class="form-select" name="lojas" id="lojasSelect" name="loja">
 									<option value="">--Nenhum--</option>
 									<option value="Itapecerica da serra">Itapecerica da Serra</option>
 									<option value="Taboão da Serra">Taboao da Serra</option>

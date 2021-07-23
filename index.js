@@ -24,15 +24,32 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
     }))
     app.use('/',router);
     app.listen(process.env.port || 3000);
+    //Post method
     app.post('/cadastro', (req,res) =>{
-    clients.insertOne(req.body).then(result =>{
-        res.redirect('/')
-        console.log(result)
-        })
-    .catch(error => console.error(error))
+        var erros = [];
+
+        if(!req.body.name || typeof req.body.name == undefined || req.body.name == null){
+            erros.push({texto: "Nome Inválido"});
+        }
+        if(!req.body.phone || typeof req.body.phone == undefined || req.body.phone == null){
+            erros.push({texto: "Telefone Inválido"});
+        }
+        if(req.body.phone.length < 8){
+            erros.push({texto: "Telefone Inválido"});
+        }
+        if(!req.body.lojas || typeof req.body.lojas == undefined || req.body.lojas == null || req.body.lojas == "--Nenhum--"){
+            erros.push({texto: "Loja Inválida"});
+        }
+        if(erros.length > 0){
+            console.log(erros)
+        }else{
+            clients.insertOne(req.body).then(result =>{
+                res.redirect('/')
+                console.log("Cadastrado com sucesso")
+            })
+        }
     })
-    
   })
   .catch(error => console.error(error))
 
-
+ 
