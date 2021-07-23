@@ -14,8 +14,8 @@ console.log('Server running');
 MongoClient.connect(connectionString, { useUnifiedTopology: true })
   .then(client => {
     console.log('Connected to Database')
-    const db = client.db('exams-clients')
-    const clients = db.collection('client')
+    const db = client.db('examsclients')
+    const clients = db.collection('clients')
     
     
     app.use(express.static('public'));
@@ -37,7 +37,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         if(req.body.phone.length < 8){
             erros.push({texto: "Telefone Inválido"});
         }
-        if(!req.body.lojas || typeof req.body.lojas == undefined || req.body.lojas == null || req.body.lojas == "--Nenhum--"){
+        if(!req.body.loja || typeof req.body.loja == undefined || req.body.loja == null || req.body.loja == "--Nenhum--"){
             erros.push({texto: "Loja Inválida"});
         }
         if(erros.length > 0){
@@ -45,7 +45,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         }else{
             clients.insertOne(req.body).then(result =>{
                 res.redirect('/')
-                console.log("Cadastrado com sucesso")
+                console.log("Cadastrado com sucesso " + req.body.name)
             })
         }
     })
