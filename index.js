@@ -14,14 +14,7 @@ console.log('Server running');
 const create_at = {
     pegarData() {
         var data = new Date();
-        var dia = String(data.getDate()).padStart(2, '0');
-        var mes = String(data.getMonth() + 1).padStart(2, '0');
-        var ano = data.getFullYear();
-        var hora = data.getHours();
-        var minutos = data.getMinutes();
-        dataAtual = ano + '-' + mes + '-' + dia +"T"+ hora + ":" + minutos;
-        console.log(dataAtual);
-        return dataAtual;
+        return data.toISOString();
     }
 }
 
