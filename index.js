@@ -8,9 +8,7 @@ const connectionString = 'mongodb+srv://admin:admin@adminexams.5vvj4.mongodb.net
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 })
-
-console.log('Server running');
-
+console.log('App running');
 const create_at = {
     pegarData() {
         var data = new Date();
@@ -18,16 +16,11 @@ const create_at = {
     }
 }
 
-
-
-
 MongoClient.connect(connectionString, { useUnifiedTopology: true })
     .then(client => {
         console.log('Connected to Database')
         const db = client.db('examsclients')
         const clients = db.collection('clients')
-
-
         app.use(express.static('public'));
         app.use(express.urlencoded({
             extended: true
@@ -51,19 +44,23 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
                 erros.push({ texto: "Loja Inválida" });
             }
             if (!req.body.created_at || typeof req.body.created_at == undefined || req.body.created_at == null || req.body.created_at == "") {
-                console.log("Passou aqui");
                 req.body.created_at = create_at.pegarData();
         }
             if (erros.length > 0) {
                 console.log(erros)
+                chamarCard("erro",erros[0].texto)
+
             } else {
                 clients.insertOne(req.body).then(result => {
-                    res.redirect('/')
+                    res.redirect('/?sucesso=1')
                     console.log("Cadastrado com sucesso " + req.body.name)
                 })
             }
         })
     })
-    .catch(error => console.error(error))
+    .catch(error => {
+        res.redirect('/?sucesso=0');
+        console.log(error);
+    });
 
 

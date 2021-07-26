@@ -25,20 +25,8 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 }
-.btn-modal-Lojas {
-    color:red !important;
-	background-color: white!important;
-	border-radius: 5px;
-	border: 0;
-	padding:8px;
-	text-decoration: none;
-}
 .nav-link {
 	color:white !important;
-}
-.nav-link:hover{
-	background-color:white;
-	color: rgba(223, 1, 8, 255) !important;
 }
 .navbar-toggler{
 	background-color: white !important;
@@ -171,4 +159,44 @@ body {
 		text-align: center;
 	}
 
+}
+/*=================================================
+||				4. Response
+==================================================*/
+#card {
+	position: absolute;
+	left: 10px;
+	top: 10%;
+	right: 50%;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	width: 0;
+	border: 0;
+	height: 50px;
+	box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+	transition: 700ms;
+}
+#card.active {
+    width: 50%;
+    transition: 700ms;
+}
+#card p {
+	margin: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+
+#card.erro{
+	background-color: #ff4444;
+}
+#card.sucesso{
+	background-color: #00C851;
+}
+@media (max-width:440px){
+	#card.active {
+		width: 80%;
+		transition: 700ms;
+	}
 }
