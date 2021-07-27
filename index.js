@@ -26,7 +26,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
             extended: true
         }))
         app.use('/', router);
-        app.listen(process.env.port || 3000);
+        app.listen(process.env.PORT || 3000);
         //Post method
         app.post('/cadastro', (req, res) => {
             var erros = [];
