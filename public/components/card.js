@@ -3,7 +3,7 @@ function chamarCard(tipo,mensagem) {
     document.querySelector("#card").classList.add("active");
 setTimeout(() => {
     document.querySelector("#card").classList.remove("active");
-}, 3200);
+}, 3000);
     document.querySelector("#card").classList.add(tipo);
     document.querySelector("#card p").innerText = mensagem
 }
