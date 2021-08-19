@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 const MongoClient = require('mongodb').MongoClient
-const connectionString = 'mongodb+srv://admin:admin@adminexams.5vvj4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const connectionString = process.env.DB_CONNECTION
 
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
