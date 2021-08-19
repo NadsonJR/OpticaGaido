@@ -3,7 +3,8 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 const MongoClient = require('mongodb').MongoClient
-const connectionString = process.env.DB_CONNECTION
+
+require('dotenv').config()
 
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -16,7 +17,8 @@ const create_at = {
     }
 }
 
-MongoClient.connect(connectionString, { useUnifiedTopology: true })
+
+MongoClient.connect( process.env.CONNECTION_STRING, { useUnifiedTopology: true })
     .then(client => {
         console.log('Connected to Database')
         const db = client.db('examsclients')
@@ -59,8 +61,8 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         })
     })
     .catch(error => {
-        res.redirect('/?sucesso=0');
+        res.redirect('/?sucesso=1')
         console.log(error);
-    });
+    })
 
 
