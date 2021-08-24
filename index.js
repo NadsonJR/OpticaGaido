@@ -57,12 +57,15 @@ MongoClient.connect( process.env.CONNECTION_STRING, { useUnifiedTopology: true }
                     res.redirect('/?sucesso=1')
                     console.log("Cadastrado com sucesso " + req.body.name)
                 })
+                .catch(error => {
+                    res.redirect('/?sucesso=0')
+                    console.log(error);
+                })
             }
         })
-    })
-    .catch(error => {
-        res.redirect('/?sucesso=1')
+    }).catch(error => {
         console.log(error);
     })
+    
 
 
