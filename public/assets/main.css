@@ -58,6 +58,33 @@ body {
 	max-width: 800px;
 	height: 800px !important;
 }
+.btn-exame-front{
+	width: 60%;
+    padding: 14px;
+    font-size: 28px;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    border: 2px solid white;
+}
+.btn-exame-front:hover{
+	color: red;
+    background-color: white;
+	border: 2px solid red;
+}
+
+@media (max-width: 440px) {
+	.btn-exame-front{
+		width: 100%;
+		padding: 14px;
+		font-size: 28px;
+		border-radius: 10px;
+		color: white;
+		background-color: red;
+		border: 2px solid white;
+		margin-bottom: 20px;
+	}
+}
 
 /*=================================================
 ||				3. Produtos
@@ -161,7 +188,18 @@ body {
 
 }
 /*=================================================
-||				4. Response
+||				4. Footer
+==================================================*/
+.footer{
+	color:white;
+	width: 100%;
+	background-color:rgba(223, 1, 8, 255)!important;
+}
+
+
+
+/*=================================================
+||				5. Response
 ==================================================*/
 #card {
 	position: absolute;
