@@ -47,7 +47,7 @@ body {
 	font-size:80px;
 }
 .text{
-	color:Black;
+	color:white;
 	align-items:center;
     justify-content:center;
 }
@@ -71,6 +71,12 @@ body {
 	color: red;
     background-color: white;
 	border: 2px solid red;
+}
+
+.bg-custom{
+	background-image: url(/assets/backgroundApresentacao.png);
+  	background-repeat: no-repeat;
+  	background-size: cover;
 }
 
 @media (max-width: 440px) {
@@ -108,7 +114,9 @@ body {
 ==================================================*/
 .lojas{
 	color:Black;
-	margin: 30px;
+	margin-top: 0px;
+	background-color:#f2f2f2;
+	padding:20px;
 }
 .icons{
 	max-width: 35px;
