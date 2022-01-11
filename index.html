@@ -36,7 +36,7 @@
 					<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary btn-exame" data-bs-toggle="modal"
 						data-bs-target="#exampleModal">
-						Agende seu exame
+						Exame Grátis
 					</button>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 						Não é sobre óculos, mas sobre cuidar da sua visão.
 						<br>Somos a marca que move uma nova forma enxergar a vida.</p>
 						<button type="button" class=" btn-exame-front" data-bs-toggle="modal" data-bs-target="#exampleModal">
-									Agende seu exame
+									Exame Grátis
 						</button>
 				</div>
 				<div class="offset-md-1 col-md-4 col-sm-12">
@@ -240,7 +240,7 @@
 
 
 	<!-- Modal -->
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -250,33 +250,32 @@
 				<div class="modal-body">
 					<form class="" action="/cadastro" method="post">
 						<div class="row">
-							<div class="col-md-12 col-sm-12">
-								<label for="name" class="form-label">Nome:</label>
-								<input class="form-control" type="text" id="name" name="name" required>
+							<div class="modalInput col-md-12 col-sm-12">
+								<label for="name" class="form-label">Nome completo:</label>
+								<input class="form-control" type="text" id="name" name="name" placeholder="Nome Completo" required>
 								<div class="invalid-feedback">
 									Por favor Preencha o nome.
 								  </div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 col-sm-12">
-								<div>Telefone:</div>
+							<div class="modalInput col-md-6 col-sm-12">
+								<div> <img class="iconsModal" src="assets/whatsapp.png" alt=""> Whatsapp:  </div>
 								<input class="form-control" type="number" placeholder="1190000-0000" name="phone" minlength="8" required>
 							</div>
-							<div class="col-md-6 col-sm-12">
-								<div>Loja</div>
+							<div class="modalInput col-md-6 col-sm-12">
+								<div><img class="iconsModal" src="assets/map.png" alt=""> Loja:</div>
 								<select class="form-select" name="loja" id="lojasSelect" name="loja" required>
-									<option value="">--Nenhum--</option>
+									<option value="">--Escolha--</option>
 									<option value="Itapecerica da serra">Itapecerica da Serra</option>
 									<option value="Taboao da Serra">Taboão da Serra</option>
 									<option value="Jardim Angela">Jardim Angela</option>
-									<option value="Piraporinha">Piraporinha</option>
 								</select>
 							</div>
 						</div>
 						<input type="datetime-local" class="d-none" name="created_at" id="created_at">
-						<div class="modal-footer">
-							<button type="submit" class="btn btn-primary btn-exame">Agendar</button>
+						<div class="modal-footer justify-content-center">
+							<button type="submit" class="btn btn-primary btn-exame">Confirmar</button>
 						</div>
 					</form>
 				</div>
@@ -284,6 +283,7 @@
 			</div>
 		</div>
 	</div>
+	
 </body>
 <!-- Footer -->
 <footer class="page-footer font-small footer pt-4">

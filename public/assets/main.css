@@ -122,6 +122,13 @@ body {
 	max-width: 35px;
 	margin: 5px;
 }
+.iconsModal{
+	max-width: 20px;
+	margin: 5px;
+}
+.modalInput{
+	padding:10px;
+}
 .lojas h1{
 	text-align: center;
 	font-size: 50px;
@@ -160,10 +167,17 @@ body {
 ==================================================*/
 
 .btn-exame{
-	color: rgba(223, 1, 8, 255)!important;
-    background-color: white !important;
-	border: 2px solid red !important;
-	float: right ;
+    background-color: green !important;
+	border: 2px solid white !important;
+	width: 100%;
+	border-radius: 25px !important;
+}
+.modal-footer{
+	padding: 0 !important;
+	border-top: none !important;
+}
+.modal-footer>* {
+    margin: 0 !important;
 }
 .modal-body input{
 	width: 100%;
